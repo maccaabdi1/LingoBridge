@@ -1,36 +1,59 @@
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    font-weight: bold;
+    color: #007BFF;
+}
+.navigation, .body{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation img{
+    justify-content: left;
+}
+.navigation .links{
+    justify-content: right;
+}
+
+.body{
+    margin-left: 5%;
+}
+.intro p {
+    font-size: larger;
+    display: block;
+}
+input[type="button"]:hover {
+    transform: scale(1.05);
+}
+
+.body div{
+    display: inline;
 }
 
 p,nav a{
     color: #007BFF;
     display: inline;
 }
-nav a:last-of-type, div button{
-    color: white;
-    background: 3px #FF6A00;
+.navigation a:last-of-type, .intro input{
+    color: black;
+    background: 3px #FFA629;
     border-radius: 10px;
     border: none;
     margin: 5px;
-    padding: 5px;
+    padding: 15px;
 }
 a{
     text-decoration: none;
     float: left;
     display: block;
     text-align: center;
+    padding: 14px 16px;
 }
 h1{
     display: inline;
     font-size: 25px;
 }
-nav{
-    overflow: hidden;
-    display: flex;
-    justify-content: right;
-}
-section div{
-    padding: 30px;
-    font-size: larger;
+
+footer{
+    background-color: #FFA629;
 }
