@@ -4,35 +4,29 @@ body{
     font-weight: bold;
     color: #007BFF;
 }
-.navigation{
+.navigation, .body{
     display: flex;
     justify-content: space-between;
 }
-.navigation .logo{
+.navigation img{
     justify-content: left;
-    border: 3px solid blue;
 }
 .navigation .links{
     justify-content: right;
-    border: 3px solid blue;
-}
-img{
-    border: none;
-    padding: none;
-    margin: none;
 }
 
-.logo{
-    margin: 0px;
-}
-.intro{
-    padding: 30px;
-    border: 3px solid #007BFD;
+.body{
+    margin-left: 5%;
 }
 .intro p {
     font-size: larger;
     display: block;
 }
+/* .intro .buttons:hover{
+
+} */
+
+
 .body div{
     display: inline;
 }
@@ -41,13 +35,13 @@ p,nav a{
     color: #007BFF;
     display: inline;
 }
-.navigation a:last-of-type, .intro button{
+.navigation a:last-of-type, .intro input{
     color: black;
-    background: 3px #FF6A00;
+    background: 3px #FFA629;
     border-radius: 10px;
     border: none;
     margin: 5px;
-    padding: 5px;
+    padding: 15px;
 }
 a{
     text-decoration: none;
@@ -59,4 +53,8 @@ a{
 h1{
     display: inline;
     font-size: 25px;
+}
+
+footer{
+    background-color: #FFA629;
 }
