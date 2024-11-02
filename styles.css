@@ -22,10 +22,9 @@ body{
     font-size: larger;
     display: block;
 }
-/* .intro .buttons:hover{
-
-} */
-
+input[type="button"]:hover {
+    transform: scale(1.05);
+}
 
 .body div{
     display: inline;
