@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LingoBridge</title>
+    <style>
+        /* Reset margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set up the body and background */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-image: url('LingoBridge Design.png'); /* Replace with your background image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Container styling */
+        .container {
+            display: flex;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        /* Button styling */
+        .button {
+            background-color: #FFA500;
+            color: #333;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        /* Icon styling */
+        .button i {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        /* Hover effect */
+        .button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Logo styling */
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <img src="logo.png" alt="LingoBridge Logo" class="logo"> <!-- Replace "logo.png" with the path to your logo -->
+
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Register a Business button -->
+        <a href="#register" class="button">
+            Register a Business
+            <i>&#128188;</i> <!-- Unicode icon for suitcase (alternatively use FontAwesome or other icon libraries) -->
+        </a>
+
+        <!-- Become an Interpreter button -->
+        <a href="#interpreter" class="button">
+            Become an Interpreter
+            <i>&#128483;</i> <!-- Unicode icon for headset (alternatively use FontAwesome or other icon libraries) -->
+        </a>
+    </div>
+</body>
+</html>
+
