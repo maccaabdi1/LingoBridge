@@ -7,31 +7,41 @@
   <title>Business Registration Form</title>
 </head>
 <body>
+  <div class="navigation">
+    <img alt="LingoBridge logo" src="LingoBridge_Design__1_-removebg-preview (1).png" width="100px">
+    <div class="links">
+      <a href="about_us.html">About Us</a>
+      <a href="sectors.html">Sectors</a>
+      <a href="find_interpreter.html">Find Interpreter</a>
+      <a href="log_in.html">Login</a>
+    </div>
+  </div>
 
   <div class="background">
     <div class="form-container">
+      <h2>Business Registration</h2>
       <form>
-        <label>Business Owner</label>
+        <label for="first-name">Business Owner</label>
         <div class="name-fields">
-          <input type="text" placeholder="First Name">
-          <input type="text" placeholder="Last Name">
+          <input type="text" id="first-name" placeholder="First Name" required>
+          <input type="text" id="last-name" placeholder="Last Name" required>
         </div>
 
-        <label>Business Name</label>
-        <input type="text" placeholder="ex. Tesla">
+        <label for="business-name">Business Name</label>
+        <input type="text" id="business-name" placeholder="e.g., Tesla" required>
 
-        <label>Number</label>
-        <input type="text" placeholder="0000-0000-0000-0000-0000-0000">
+        <label for="business-number">Business Number</label>
+        <input type="text" id="business-number" placeholder="0000-0000-0000-0000" required>
 
-        <label>Email</label>
-        <input type="email" placeholder="example@example.com">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="example@example.com" required>
 
-        <label>Address</label>
-        <input type="text" placeholder="Street Address">
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="Street Address" required>
         <div class="address-fields">
-          <input type="text" placeholder="City">
-          <input type="text" placeholder="State/Province">
-          <input type="text" placeholder="Postal/Zip code">
+          <input type="text" placeholder="City" required>
+          <input type="text" placeholder="State/Province" required>
+          <input type="text" placeholder="Postal/Zip code" required>
         </div>
 
         <button type="submit" class="register-button">Register</button>
@@ -40,87 +50,118 @@
   </div>
 
 </body>
-
-</html><style>
-    /* styles.css */
-
-* {
-  box-sizing: border-box;
-}
-
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-.background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-image: url('your-map-image.jpg'); /* Replace with your map image */
-  background-size: cover;
-  background-position: center;
-}
-
-.form-container {
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 15px;
-  padding: 30px;
-  max-width: 500px;
-  width: 90%;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  font-size: 16px;
-  color: #FF9900; /* Orange color */
-  margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px dashed #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.name-fields,
-.address-fields {
-  display: flex;
-  gap: 10px;
-}
-
-.name-fields input,
-.address-fields input {
-  flex: 1;
-}
-
-.register-button {
-  background-color: #FF9900;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.register-button:hover {
-  background-color: #e68a00;
-}
-
-</style>
 </html>
 
+<style>
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .links a:hover {
+    color: #FF9900;
+  }
+
+  .background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FF9900;
+  }
+
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+    color: #FF9900;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-size: 16px;
+    color: #FF9900;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+
+  input:focus {
+    border-color: #FF9900;
+    outline: none;
+  }
+
+  .name-fields,
+  .address-fields {
+    display: flex;
+    gap: 10px;
+  }
+
+  .name-fields input,
+  .address-fields input {
+    flex: 1;
+  }
+
+  .register-button {
+    background-color: #FF9900;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .register-button:hover {
+    background-color: #e68a00;
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+</style>
