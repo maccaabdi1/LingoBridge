@@ -5,132 +5,136 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>LingoBridge</title>
         <link rel="stylesheet" href="styles.css">
+
+        <style>
+            h2 {
+                text-align: center;
+                color: #FF9900;
+                margin-bottom: 20px;
+            }
+            /* Map Section */
+            .map-section {
+                padding: 20px;
+                text-align: center;
+            }
+
+            .map-container {
+                position: relative;
+                margin: 20px auto;
+                width: 80%;
+                max-width: 800px;
+                height: 400px;
+                background-color: #e0e0e0;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            .map-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .pin {
+                position: absolute;
+                font-size: 24px;
+                cursor: pointer;
+            }
+        </style>
     </head>
     <body>
-        
-            <div class="navigation">
-                <img alt="LingoBridge logo" src="LingoBridge_Design__1_-removebg-preview (1).png" width="100px">
-                <div class="links">
-                  <a href="about_us.html">About Us</a>
-                  <a href="sectors.html">Sectors</a>
-                  <a href="find_interpreter.html">Find Interpreter</a>
-                  <a href="log_in.html">Login</a>
+        <nav class="navigation">
+            <img alt="LingoBridge logo" src="LingoBridge_Design__1_-removebg-preview (1).png" width="100px">
+            <h1>Find an Interpreter</h1>
+            <div class="links">
+                <a href="about_us.html">About Us</a>
+                <a href="sectors.html">Sectors</a>
+                <!-- <a href="find_interpreter.html">Find Interpreter</a> -->
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+
+        <section class="map-section">
+            <h2>Select a Location</h2>
+            <div class="map-container">
+                <!-- Placeholder for Interactive Map -->
+                <img src="https://via.placeholder.com/800x400" alt="Map Placeholder" class="map-image">
+                <div class="pin" style="top: 50%; left: 30%;">📍</div>
+                <div class="pin" style="top: 70%; left: 60%;">📍</div>
+                <!-- Add more pins as needed -->
+            </div>
+        </section>
+
+        <section class="interpreter-list-section">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for a language..." aria-label="Search for a language">
+            </div>
+            <div class="interpreter-cards">
+                <div class="interpreter-card">
+                    <h3>John Doe</h3>
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <p>Languages: English, Spanish, ASL</p>
                 </div>
-              </div>
-        </div>
+                <div class="interpreter-card">
+                    <h3>Jane Smith</h3>
+                    <p>⭐️⭐️⭐️⭐️</p>
+                    <p>Languages: French, ASL</p>
+                </div>
+                <!-- Add more interpreter cards as needed -->
+            </div>
+        </section>
     </body>
+</html>
+<body>
     <style>
 
+/* Interpreter List Section */
+.interpreter-list-section {
+    padding: 20px 30px;
+    background-color: white;
+}
 
-        * {
-          box-sizing: border-box;
-        }
-      
-        body, html {
-          margin: 0;
-          padding: 0;
-          font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
-      
-        .navigation {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 10px 20px;
-          background-color: #fff;
-          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-      
-        .links a {
-          margin: 0 10px;
-          text-decoration: none;
-          color: #333;
-          font-weight: bold;
-          transition: color 0.3s;
-        }
-      
-        .links a:hover {
-          color: #FF9900;
-        }
-      
-        .background {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          background-color: #FF9900;
-        }
-      
-        .form-container {
-          background-color: rgba(255, 255, 255, 0.95);
-          border-radius: 15px;
-          padding: 40px;
-          max-width: 500px;
-          width: 90%;
-          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-        }
-      
-        h2 {
-          text-align: center;
-          color: #FF9900;
-          margin-bottom: 20px;
-        }
-      
-        form {
-          display: flex;
-          flex-direction: column;
-        }
-      
-        label {
-          font-size: 16px;
-          color: #FF9900;
-          margin-bottom: 5px;
-        }
-      
-        input[type="text"],
-        input[type="email"] {
-          width: 100%;
-          padding: 10px;
-          margin-bottom: 15px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          font-size: 14px;
-          transition: border-color 0.3s;
-        }
-      
-        input:focus {
-          border-color: #FF9900;
-          outline: none;
-        }
-      
-        .name-fields,
-        .address-fields {
-          display: flex;
-          gap: 10px;
-        }
-      
-        .name-fields input,
-        .address-fields input {
-          flex: 1;
-        }
-      
-        .register-button {
-          background-color: #FF9900;
-          color: #fff;
-          border: none;
-          border-radius: 8px;
-          padding: 15px;
-          font-size: 18px;
-          font-weight: bold;
-          cursor: pointer;
-          transition: background 0.3s;
-        }
-      
-        .register-button:hover {
-          background-color: #e68a00;
-          transform: translateY(-2px);
-          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-        }
-      </style>
-      
+.search-bar {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.interpreter-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.interpreter-card {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+.interpreter-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.interpreter-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+    </style>
+</body>
 </html>
+
+

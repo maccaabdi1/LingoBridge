@@ -1,22 +1,36 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: bold;
-    margin: 0;
     color: #0D99FF;
 }
 .navigation, .body{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 .navigation img{
     justify-content: left;
 }
 .navigation .links{
     justify-content: right;
+}
+.links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0D99FF;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.links a:hover {
+    color: #FF9900;
 }
 
 .body{
