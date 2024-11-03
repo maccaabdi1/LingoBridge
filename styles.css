@@ -3,8 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -21,6 +19,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px;
+    background-color: #fff;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 .navigation img{
@@ -32,7 +31,7 @@ body{
 .links a {
     margin: 0 10px;
     text-decoration: none;
-    color: #0D99FF;
+    color: #333;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -42,13 +41,6 @@ body{
 
 .logo {
     width: 100px;
-}
-
-.links a {
-    margin: 0 15px;
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
 }
 
 .register-button {
