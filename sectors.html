@@ -7,33 +7,53 @@
         <link rel="stylesheet" href="styles.css">
 
         <style>
-            .icons{
+            .sectors{
                 display: flex;
-                flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-                gap: 16px;
-                margin: 0 auto;
+                gap: 20px;
+                padding: 20px;
                 list-style-type: none;
             }
-            .icons li{
-                background-color: blue;
-                flex: 1 1 calc(25% - 16px);
-                min-width: calc(25% - 16px);
+            .sectors li{
+                text-align: center;
                 box-sizing: border-box;
                 text-align: center;
-                padding: 10px;
-                border-radius: 360px;
             }
-            .icons li:last-of-type{
-                background-color: #FFA629;
-                border-radius: 30px;
-                color: black;
-            }
-        </style>
-</html>
 
+            .sector-item{
+                width: 100px;
+                height: 100px;
+                background-color: #007bff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 10px;
+                transition: background-color 0.3s;
+            }
+            .sector-item:hover{
+                background-color: #0056b3;
+            }
+            .sector-item img{
+                width: 50px;
+                height: auto;
+                background-color: white;
+                border-radius: 50%;
+            }
+
+            .sector-label, .sector-more{
+                font-size: 14px;
+                color: black;
+                margin-top: 5px;
+            }
+            .sector-more{
+                font-size: 16px;
+                background-color: #FF9900;
+                border-radius: 25%;
+                padding: 20px;
+            }
 
         </style>
     </head>
@@ -49,17 +69,38 @@
             </div>
         </div>
 
-        <div class="list">
-            <ul class="icons">
-                <li>Government</li>
-                <li>Non-for-Profit</li>
-                <li>Medical</li>
-                <li>Education</li>
-                <li>Financial</li>
-                <li>Gaming</li>
-                <li>Legal</li>
-                <li>More</li>
-            </ul>
-        </div>
+        <ul class="sectors">
+            <li>
+                <div class="sector-item"><img class="sector-icon" alt="government" src="sector-icons/government-icon.png"></span></div>
+                <div class="sector-label">Government</div>
+            </li>
+            <li>
+                <div class="sector-item"><img class="sector-icon" alt="non-profit" src="sector-icons/non-profit-icon.png"></span></div>
+                <div class="sector-label">Non-For-Profit</div>
+            </li>
+            <li>
+                <div class="sector-item"><img class="sector-icon" alt="medical" src="sector-icons/medical-icon.png"></span></div>
+                <div class="sector-label">Medical</div>
+            </li>
+            <li>
+                <div class="sector-item"><img class="sector-icon" alt="education" src="sector-icons/education-icon.png"></span></div>
+                <div class="sector-label">Education</div>
+            </li>
+            <li>
+                <div class="sector-item"><img class="sector-icon" alt="financial" src="sector-icons/financial-icon.png"></span></div>
+                <div class="sector-label">Financial</div>
+            </li>
+            <li>
+                <div class="sector-item"><img class="sector-icon" alt="gaming" src="sector-icons/gaming-icon.png"></span></div>
+                <div class="sector-label">Gaming</div>
+            </li>
+            <li>
+                <div class="sector-item"><img class="sector-icon" alt="legal" src="sector-icons/Legal-icon.png"></span></div>
+                <div class="sector-label">Legal</div>
+            </li>
+            <li>
+                <div class="sector-more">More</div>
+            </li>
+        </ul>
     </body>
 </html>
