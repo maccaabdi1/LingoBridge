@@ -1,38 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>LingoBridge</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="navigation">
-            <img alt="LingoBridge logo" src="LingoBridge_Design__1_-removebg-preview (1).png" width="100px">
-            <div class="links">
-                <a href="about_us.html">About Us</a>
-                <a href="sectors.html">Sectors</a></p>
-                <a href="our_interpreters.html">Our Interpreters</a>
-                <a href="find_interpreter.html">Find Interpreters</a>
-                <a href="register_page.html">Register</a></p>
-            </div>
-        </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LingoBridge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header class="navigation">
+        <img alt="LingoBridge logo" src="LingoBridge_Design__1_-removebg-preview (1).png" class="logo">
+        <nav class="links">
+            <a href="about_us.html">About Us</a>
+            <a href="sectors.html">Sectors</a>
+            <a href="our_interpreters.html">Our Interpreters</a>
+            <a href="find_interpreter.html">Find Interpreter</a>
+            <a href="register_page.html" class="register-button">Register</a>
+        </nav>
+    </header>
 
-        <div class="body">
-            <div class="intro">
-                <p>Welcome to LingoBridge</p>
-                <p>Your number one stop for Interpreters!</p>
-                <div class="buttons">
-                    <input type="button" value="Find Interpreter" onclick="window.location.href='find_interpreter.html'">
-                    <input type="button" value="Register" onclick="window.location.href='Register.html'">
-                </div> 
+   
+    <main class="main-content">
+        <div class="intro">
+            <h1>Welcome to LingoBridge</h1>
+            <p>Your number one stop for Interpreters!</p>
+            <div class="buttons">
+                <button onclick="window.location.href='find_interpreter.html'">Find Interpreter</button>
+                <button onclick="window.location.href='register_page.html'">Register</button>
             </div>
-            <img alt="Greetings in different langauges" src="Languages.png" width="500px">
         </div>
-        <footer>
-            <div>
-                <p>Contact US</p>
-            </div>
-        </footer>
-    </body>
+        <img alt="Greetings in different languages" src="Languages.png" class="language-image">
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="about_us.html">About Us</a>
+            <a href="sectors.html">Sectors</a>
+            <a href="our_interpreters.html">Our Interpreters</a>
+            <a href="find_interpreter.html">Find Interpreter</a>
+        </div>
+        <div class="contact">
+            <p>Contact US</p>
+            <p>(911)-911-9119</p>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
 </html>
